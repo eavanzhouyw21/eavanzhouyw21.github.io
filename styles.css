@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +14,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -23,25 +24,25 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 20px;
     color: #777;
 }
 
 .about-me {
     background: none;
     border: 1px solid #333;
-    padding: 8px 8px;
+    padding: 8px 16px;
     cursor: pointer;
 }
 
@@ -50,6 +51,11 @@ h2 {
     border: 1px solid #fff;
     padding: 8px 16px;
     cursor: pointer;
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
 }
 
 .carousel {
