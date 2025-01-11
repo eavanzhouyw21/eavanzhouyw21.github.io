@@ -129,9 +129,31 @@ h2 {
     z-index: 1001; /* Ensure the close button is always clickable */
 }
 
+.menu-content h2 a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;  /* Adjust padding as necessary */
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-content h2 a:hover {
+    background-color: #484848; /* Lighter shade for hover effect */
+    color: #ffffff;
+    text-decoration: none; /* Ensure no other styles are applied */
+}
+
 .menu-content h2 {
-    margin: 20px 0;
-    font-size: 36px;
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Ensures no extra padding */
+    background-color: black; /* Consistent background color */
+    width: 100%; /* Full width */
+    box-shadow: none; /* No shadow to avoid any visual offset */
 }
 
 .social-links {
