@@ -29,18 +29,104 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #777;
+}
+
+.about-me {
+    display: inline-block; /* Ensures it can be styled like a button */
+    background-color: #f8f9fa; /* Button color */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Border like a typical button */
+    padding: 8px 16px; /* Padding inside the button */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.about-me:hover {
+    background-color: #e2e2e2; /* Color change on hover */
+}
+
+.about-me-content h1 {
+    font-size: 24px;
+    color: #fff; /* Adjust color based on background */
+    padding: 20px;
+}
+
+.about-me-content p {
+    font-size: 18px;
+    color: #ccc; /* Adjust for readability */
+    padding: 0 20px 20px;
+}
+
+.menu {
+    background: none;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
 .menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    color: white;
-    display: none; /* Hide by default */
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1000;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 40px;
+    opacity: 0; /* Start fully transparent */
+    transform: translateY(-100%); /* Start off-screen */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transition for both properties */
+    visibility: hidden; /* Hide by default */
+}
+
+.menu-overlay.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0%); /* Move into view */
+    visibility: visible; /* Make visible */
+}
+
+.menu-header {
+    font-size: 32px; /* Large font size for visibility */
+    color: white; /* Ensures the text is visible against the dark background */
+    text-align: center; /* Centers the header text */
+    margin-bottom: 40px; /* Space between the header and other menu items */
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the close button is always clickable */
 }
 
 .menu-content h2 {
@@ -68,36 +154,6 @@ h2 {
     border: none;
     color: white;
     cursor: pointer;
-}
-
-
-.logo {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #777;
-}
-
-.about-me {
-    background: none;
-    border: 1px solid #333;
-    padding: 8px 16px;
-    cursor: pointer;
-}
-
-.menu {
-    background: none;
-    border: 1px solid #fff;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-family: "Orbitron", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20px;
 }
 
 .carousel {
