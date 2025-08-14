@@ -1,36 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eavan's Game Design Portfolio</title>
+    <title>Eavan - Game Designer</title>
+    <meta name="description" content="Game designer specializing in analog and digital games. Portfolio featuring board games, card games, RPGs, and video games.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>
-        <nav>
-            <button class="about-me">About Me</button>
-        </nav>
-        <div class="logo">Eavan's</div>
-        <nav>
-            <button class="menu">MENU</button>
-        </nav>
-    </h1>
-    <h2>
-        <div class="subtitle" div style="white-space: pre-wrap;">GAME DESIGN &#10;  PORTFOLIO</div>
-    </h2>
-    <main>
-        <section class="carousel">
-            <div class="carousel-track">
-                <img src="placeholder1.jpg" alt="Placeholder 1" class="carousel-image">
-                <img src="placeholder2.jpg" alt="Placeholder 2" class="carousel-image">
-                <img src="placeholder3.jpg" alt="Placeholder 3" class="carousel-image">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Eavan</a>
             </div>
-            <button class="carousel-button prev">❮</button>
-            <button class="carousel-button next">❯</button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-carousel">
+                <div class="carousel-slide active">
+                    <img src="assets/images/carousel/hardspace-hero.png" alt="Hardspace Shipbreaker Card Design">
+                    <div class="slide-overlay">
+                        <span class="slide-label">Hardspace Shipbreaker - Board Game</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/mad-surgeons-hero.png" alt="Mad Surgeons Creature Assembly">
+                    <div class="slide-overlay">
+                        <span class="slide-label">Mad Surgeons - Card Game</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/eldritch-hero.gif" alt="Eldritch Afflictions Gameplay">
+                    <div class="slide-overlay">
+                        <span class="slide-label">Eldritch Afflictions - Video Game</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/goose-hero.png" alt="Goose Game Environment">
+                    <div class="slide-overlay">
+                        <span class="slide-label">Goose Game - Unity Project</span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/carousel/playtest-hero.png" alt="Game Playtesting Session">
+                    <div class="slide-overlay">
+                        <span class="slide-label">Live Playtesting Sessions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Game Designer</h1>
+                <p class="hero-subtitle">Creating engaging experiences through analog and digital games</p>
+                <a href="projects.html" class="cta-button">View Projects</a>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" aria-label="Previous slide">&larr;</button>
+                <div class="carousel-dots">
+                    <button class="dot active" data-slide="0"></button>
+                    <button class="dot" data-slide="1"></button>
+                    <button class="dot" data-slide="2"></button>
+                    <button class="dot" data-slide="3"></button>
+                    <button class="dot" data-slide="4"></button>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next slide">&rarr;</button>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/hardspace-preview.png" alt="Hardspace Shipbreaker Analog Adaptation">
+                        </div>
+                        <div class="project-content">
+                            <h3>Hardspace Shipbreaker</h3>
+                            <p>Analog board game adaptation with strategic card mechanics and collaborative gameplay</p>
+                            <a href="hardspace-shipbreaker.html" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/mad-surgeons-preview.png" alt="Mad Surgeons Card Game">
+                        </div>
+                        <div class="project-content">
+                            <h3>Mad Surgeons</h3>
+                            <p>Strategic card game combining body-building mechanics with competitive gameplay</p>
+                            <a href="mad-surgeons.html" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/together-be-different-preview.svg" alt="Together Be Different RPG">
+                        </div>
+                        <div class="project-content">
+                            <h3>Together Be Different</h3>
+                            <p>Collaborative tabletop RPG emphasizing teamwork and unique character abilities</p>
+                            <a href="together-be-different.html" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/eldritch-afflictions-preview.gif" alt="Eldritch Afflictions Video Game">
+                        </div>
+                        <div class="project-content">
+                            <h3>Eldritch Afflictions</h3>
+                            <p>Horror-themed puzzle video game with surgical mechanics and atmospheric design</p>
+                            <a href="eldritch-afflictions.html" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/goose-game-preview.png" alt="Goose Game">
+                        </div>
+                        <div class="project-content">
+                            <h3>Goose Game</h3>
+                            <p>Unity-based arcade game featuring flight mechanics and energy management</p>
+                            <a href="goose-game.html" class="project-link">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <h2>Passionate About Game Design</h2>
+                    <p>I create meaningful gaming experiences that bring people together, whether through strategic card games, collaborative RPGs, or innovative digital experiences. My work spans analog and digital mediums, always focusing on engaging mechanics and player interaction.</p>
+                    <a href="about.html" class="secondary-button">Learn More About Me</a>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Eavan. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

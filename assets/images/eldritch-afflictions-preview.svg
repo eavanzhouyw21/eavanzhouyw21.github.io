@@ -1,0 +1,16 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#434343;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#bg)"/>
+  <path d="M 60 50 Q 80 40 100 50 Q 120 60 100 80 Q 80 90 60 80 Q 40 70 60 50 Z" fill="rgba(139,69,19,0.8)"/>
+  <circle cx="80" cy="65" r="3" fill="rgba(220,38,38,0.9)"/>
+  <path d="M 50 90 Q 55 85 65 90 Q 70 95 65 100 Q 55 105 50 100 Q 45 95 50 90 Z" fill="rgba(255,255,255,0.2)"/>
+  <rect x="110" y="60" width="20" height="3" rx="1" fill="rgba(192,192,192,0.9)"/>
+  <path d="M 140 70 L 160 65 L 155 75 L 150 80 L 140 75 Z" fill="rgba(192,192,192,0.8)"/>
+  <text x="200" y="100" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Eldritch Afflictions</text>
+  <text x="200" y="125" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" text-anchor="middle">Horror Puzzle Video Game</text>
+</svg>
